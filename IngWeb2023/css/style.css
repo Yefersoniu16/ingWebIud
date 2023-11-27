@@ -1,0 +1,124 @@
+body {
+   background-color:  #E4EAEA;
+
+}
+ul {
+   list-style-type: none;
+}
+a {
+   text-decoration: none;
+}
+nav {
+   background-color: white;
+   box-shadow: 0 5px rgb(0, 0, 0, 0.1);
+   
+}
+@media (min-width: 800px){
+   .nav-main {
+      max-width: 3340px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem;
+   }
+   
+}
+.menu a{
+   color: gray;
+   letter-spacing: 0.1rem; 
+   display: block;
+   padding: 0.5rem 1rem;
+   transition: all 0.3s linear;
+}
+
+.menu a:hover{
+   background: #E8CEDE;
+   color: #FA7E89;
+   padding-left: 1.5rem;
+}
+.menu {
+   height: auto;
+   display: flex;
+}
+ .menu a {
+   padding: 0;
+   margin: 0 0.5rem;
+ }
+ .menu a:hover {
+   padding: 0;
+   background: transparent;
+ }
+ .card {
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+   transition: 0.3s;
+   background-color: white;
+   width: 300px;
+   height: 100%;
+   margin: 10px;
+ }
+ .card :hover {
+   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+ }
+ .card img {
+   width: 100%;
+ }
+ .card h3 {
+   font-style: inherit;
+   text-align: center;
+ }
+ .card-container {
+   padding: 2px 16px;
+ }
+
+ .card button {
+   padding: 10px;
+   background-color: red;
+   color: white;
+   width: 100%;
+   margin-bottom: 10%;
+   border: 0px;
+   cursor: pointer;
+   border-radius: 5px;
+ }
+
+ .card button:hover {
+   box-shadow: o 8px 16px 0 rgba(0, 0, 0, 0.2);
+ }
+
+.container {
+   display: flex;
+   justify-content: center;
+}
+.card-add {
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+   transition: 0.3s;
+   background-color: white;
+   width: 500px;
+   height: 100%;
+   margin: 20px;
+ }
+
+ .card-add button {
+   padding: 10px;
+   background-color: red;
+   color: white;
+   width: 100%;
+   margin-bottom: 10%;
+   border: 0px;
+   cursor: pointer;
+   border-radius: 5px;
+ }
+ .card-add button:hover {
+   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+ }
+ .card-add h2 {
+   color: red;
+ }
+ .card-add input {
+   width: 100%;
+   padding: 2px;
+  
+
+ 
+ }

@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
-    
+
 </head>
 
 <body>
-   
+
     <nav>
         <div class="nav-main">
             <div>
@@ -32,26 +32,27 @@
             </ul>
         </div>
     </nav>
-    <div class="container">
-        <div class="card-add">
-            <div class="card-container">
-                <h2>product</h2>
-                <p>Name: </p>
-                <input type="text" id="nombre" name="name">
-                <div id="alerta_name"></div>
-                <p>Price:</p>
-                <input type="number" id="price" name="price">
-                <div id="alerta_price"></div>   
-                <p>Inventory:</p>
-                <input type="number" id="inventory" name="inventory"><br>
-                <div id="alerta_inventory"></div>
-                <p></p>
-                <button id="button_create">Create product</button>
+    <form id="formulario" action="">
+        <div class="container">
+            <div class="card-add">
+                <div class="card-container">
+                    <h2>product</h2>
+                    <p>Name: </p>
+                    <input type="text" id="nombre" name="name">
+                    <div id="alerta_name"></div>
+                    <p>Price:</p>
+                    <input type="number" id="price" name="price">
+                    <div id="alerta_price"></div>
+                    <p>Inventory:</p>
+                    <input type="number" id="inventory" name="inventory"><br>
+                    <div id="alerta_inventory"></div>
+                    <p></p>
+                    <button id="button_create">Create product</button>
+                </div>
             </div>
         </div>
-    </div>
-   
-    <script src= "./main.js"></script>
+    </form>
+    <script src="./main.js"></script>
 </body>
 
 </html>

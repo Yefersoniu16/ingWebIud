@@ -119,6 +119,32 @@ nav {
    width: 100%;
    padding: 2px;
   
+ }
+ #producto-container{
+  width: 400px;
+  margin: auto;
+ }
+
+ .tarjeta-producto {
+  display: flex;
+  gap: 30px;
+  align-items: center; 
+
+ }
+
+ .tarjeta-producto img{
+height: 40px;
+  aspect-ratio: 2;
+
+ }
 
  
+ .productos-container h3{
+  width: 600px;
+
  }
+
+ 
+
+
+

@@ -8,20 +8,21 @@ window.addEventListener('load', () => {
     const price = document.getElementById('price');
     const inventory = document.getElementById('inventory');
     const boton = document.getElementById('button_create');
+    alertaInventory.style.color = 'red'
+    alertaName.style.color = 'red'
+    alertaPrice.style.color = 'red'
+
     
-alertaInventory.style.color = 'red'
-alertaName.style.color = 'red'
-alertaPrice.style.color = 'red'
     form.addEventListener('submit', (e) => {
         e.preventDefault()
-       const error = validaCampos()
+        const error = validaCampos()
 
-       if(error === false){
-        alert('Producto creado')
-       }
+        if (error === false) {
+            alert('Producto creado')
+        }
 
         alertaAggSuccessful()
-        
+
     })
 
     const validaCampos = () => {
@@ -29,118 +30,31 @@ alertaPrice.style.color = 'red'
         const nombreValor = nombre.value.trim()
         const priceValor = price.value.trim()
         const inventoryValor = inventory.value.trim()
-        // console.log(incentoryValor); // mostrar captura 
+
 
         if (!nombreValor === null || nombreValor === '') {
             alertaName.innerHTML = 'Campo requerido'
             error = true
-        
-        }else{ alertaName.innerHTML = null}
+
+        } else { alertaName.innerHTML = null }
 
         if (!priceValor === null || priceValor === '') {
             alertaPrice.innerHTML = 'Campo requerido'
             error = true
-           
-        }else{alertaPrice.innerHTML = null}
+
+        } else { alertaPrice.innerHTML = null }
 
         if (!inventoryValor === null || inventoryValor === '') {
             alertaInventory.innerHTML = 'Campo requerido'
             error = true
-            
-        }else{alertaInventory.innerHTML = null}
-        
-      return error
+
+        } else { alertaInventory.innerHTML = null }
+
+        return error
     }
 
 });
 
-
-
-/*
-if (price === null || price.value === '') {
-    
-    alertaPrice.innerHTML = 'Campo requerido'
-    return false;
- 
-}
-if (inventory === null || inventory.value === '') {
-    alertaInventory.innerHTML = 'Campo requerido'
-    return false;   
-}*/
-
-
-
-
-/*
-
-boton.addEventListener('click', function () {
-    //console.log("Hola mundo");
-    validaCampos()
-});
-
-const validaCampos = () => {
-    const nombreValor = nombre.value
-    console.log(nombreValo);
-
-}
-
-
-
-
-function validateInputs(){
-    if (nombre === null || nombre.value === '') {
-        alertaName.innerHTML = 'Campo requerido'
-       return false;
-    }
-    if (price === null || price.value === '') {
-        
-        alertaPrice.innerHTML = 'Campo requerido'
-        return false;
-     
-    }
-    if (inventory === null || inventory.value === '') {
-        alertaInventory.innerHTML = 'Campo requerido'
-        return false;   
-    }
-    
-
-
-    form.addEventListener("click", (e)=>{
-        e.preventDefault();
-         validateInputs();  
-        alert('Producto creado');
-    
-}); 
-
-    const validaOk = (input, msje) =>{
-        const formControl = input.parentElement
-    }
-} 
-
- const alertaAggSuccessful = () => {
-        const nombreValor = nombre.value.trim()
-        const priceValor = price.value.trim()
-        const inventoryValor = inventory.value.trim()
-        // console.log(incentoryValor); // mostrar captura 
-
-        if (!nombreValor !== null || nombreValor !== '') {
-            alert('Producto creado');
-        
-        }
-
-        if (!priceValor !== null || priceValor !== '') {
-            alert('Producto creado');
-           
-        }
-
-        if (!inventoryValor !== null || inventoryValor !== '') {
-            alert('Producto creado');
-            
-        }
-
-    }
-    
-    */
 
 
 

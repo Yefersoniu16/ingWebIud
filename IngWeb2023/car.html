@@ -6,42 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="./car.js"></script>
+    <script src="./index.js" defer></script>
+
 </head>
-
 <body>
-    <nav>
-        <div class="nav-main">
-            <div>
-                <img src="logo.png" alt="logo" width="200" height="120">
+    <header>
+        <nav>
+            <div class="nav-main">
+                <div>
+                    <img src="logo.png" alt="logo" width="200" height="120">
+                </div>
+                <ul class="menu">
+                    <li>
+                        <a href="theStore.html">Chevrolet</a>
+                    </li>
+                    <li>
+                        <a href="theStore.html">Renault</a>
+                    </li>
+                    <li>
+                        <a href="theStore.html">FIAT</a>
+                    </li>
+                    <li>
+                        <a href="newProduct.html">New Product</a>
+                    </li>
+                    <li>
+                        <a href="car.html">Car</a>
+                    </li>
+                </ul>
             </div>
-            <ul class="menu">
-                <li>
-                    <a href="theStore.html">Chevrolet</a>
-                </li>
-                <li>
-                    <a href="theStore.html">Renault</a>
-                </li>
-                <li>
-                    <a href="theStore.html">FIAT</a>
-                </li>
-                <li>
-                    <a href="newProduct.html">New Product</a>
-                </li>
-                <li>
-                    <a href="car.html">Car</a>
-                </li>
-            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="card-add">
+                <div class="card-container">
+                    <section id="productos-container"></section>
+                </div>
+            </div>
         </div>
-    </nav>
-    <div class="container">
-    <div class="card-add"></div>
-    <div class="card">
-        <div class="card-container">
-            <h3 id="fiat">FIAT</h3>
-            <p>55.000.000</p>
-        </div>
-    </div>
-</div>
+    </main>
 </body>
-
 </html>
